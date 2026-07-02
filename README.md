@@ -55,6 +55,27 @@ Python's modulus result has the same sign as the divisor:
 
 a % b = a - b * (a // b)
 
+Here’s a complete list of Python’s keywords:
 
+False      await      else       import     pass
+None       break      except     in         raise
+True       class      finally    is         return
+and        continue   for        lambda     try
+as         def        from       nonlocal   while
+assert     del        global     not        with
+async      elif       if         or         yield
+
+
+A module is a collection of variables and functions. The math module provides a variable called pi that contains the value of the mathematical constant denoted . We can display its value like this:
+
+math.pi
+
+int(string, base)
+
+int(101,2)
+5
+
+any number of arguments print
+print('Any', 'number', 'of', 'arguments')
 
 
