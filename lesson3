@@ -1,1 +1,139 @@
+Here are the answers to each question:
+
+### 1. We've seen that `n = 17` is legal. What about `17 = n`?
+
+`17 = n` is **not legal** in Python.
+
+```python
+17 = n
+```
+
+**Result:**
+
+```text
+SyntaxError: cannot assign to literal
+```
+
+**Explanation:**
+
+* The left side of an assignment (`=`) must be a **variable**, not a constant (literal).
+* `n = 17` means "store the value `17` in the variable `n`."
+* `17 = n` tries to store a value into the number `17`, which is impossible.
+
+---
+
+### 2. What about `x = y = 1`?
+
+This is **legal** in Python.
+
+```python
+x = y = 1
+```
+
+After executing this statement:
+
+```python
+print(x)  # 1
+print(y)  # 1
+```
+
+Both `x` and `y` are assigned the value `1`.
+
+This is called **multiple assignment** (or chained assignment).
+
+---
+
+### 3. What happens if you put a semicolon (`;`) at the end of a Python statement?
+
+Nothing unusual happens. Python accepts it.
+
+```python
+x = 5;
+print(x);
+```
+
+**Output:**
+
+```text
+5
+```
+
+Semicolons are **optional** in Python. They are mainly used to place multiple statements on the same line:
+
+```python
+x = 5; y = 10; print(x + y)
+```
+
+**Output:**
+
+```text
+15
+```
+
+However, the Python style guide (PEP 8) recommends **not** using semicolons unless necessary.
+
+---
+
+### 4. What if you put a period (`.`) at the end of a statement?
+
+Python raises a **SyntaxError**.
+
+Example:
+
+```python
+x = 5.
+```
+
+This is **valid**, because `5.` is interpreted as the floating-point number `5.0`.
+
+However:
+
+```python
+print(x).
+```
+
+or
+
+```python
+x = 5..
+```
+
+are **invalid** and produce a `SyntaxError` because the period is not expected there.
+
+---
+
+### 5. What happens if you spell the name of a module wrong and try to import `maath`?
+
+For example:
+
+```python
+import maath
+```
+
+**Result:**
+
+```text
+ModuleNotFoundError: No module named 'maath'
+```
+
+**Explanation:**
+
+* Python searches for a module named `maath`.
+* Since no such module exists (assuming it isn't installed), Python raises a `ModuleNotFoundError`.
+
+The correct import is:
+
+```python
+import math
+```
+
+### Summary
+
+| Question               | Result                                                                 |
+| ---------------------- | ---------------------------------------------------------------------- |
+| `17 = n`               | ❌ `SyntaxError` (cannot assign to a literal)                           |
+| `x = y = 1`            | ✅ Both variables are assigned `1`                                      |
+| Semicolon (`;`) at end | ✅ Allowed; usually ignored at the end of a line                        |
+| Period (`.`) at end    | ❌ Usually `SyntaxError` (except when part of a valid number like `5.`) |
+| `import maath`         | ❌ `ModuleNotFoundError: No module named 'maath'`                       |
 
