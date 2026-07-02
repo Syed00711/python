@@ -50,4 +50,11 @@ Precedence	         Operators	           Description
 14 (Lowest)	          =, +=, -=, etc.	          Assignment
 
 
+Modulus with negative numbers
+Python's modulus result has the same sign as the divisor:
+
+a % b = a - b * (a // b)
+
+
+
 
