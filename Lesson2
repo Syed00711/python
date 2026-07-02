@@ -1,0 +1,221 @@
+Python provides many **built-in functions** that are available by default—you don't need to import any module to use them.
+
+Here are some of the most commonly used built-in functions, grouped by category.
+
+### 1. Type Conversion
+
+| Function    | Description                               |
+| ----------- | ----------------------------------------- |
+| `int()`     | Converts to an integer                    |
+| `float()`   | Converts to a floating-point number       |
+| `str()`     | Converts to a string                      |
+| `bool()`    | Converts to a Boolean (`True` or `False`) |
+| `list()`    | Converts to a list                        |
+| `tuple()`   | Converts to a tuple                       |
+| `set()`     | Converts to a set                         |
+| `dict()`    | Creates a dictionary                      |
+| `complex()` | Creates a complex number                  |
+
+Example:
+
+```python
+int("25")      # 25
+float("3.14")  # 3.14
+str(100)       # "100"
+```
+
+---
+
+### 2. Mathematical Functions
+
+| Function   | Description                    |
+| ---------- | ------------------------------ |
+| `abs()`    | Absolute value                 |
+| `round()`  | Rounds a number                |
+| `pow()`    | Raises a number to a power     |
+| `divmod()` | Returns quotient and remainder |
+| `max()`    | Largest value                  |
+| `min()`    | Smallest value                 |
+| `sum()`    | Sum of values                  |
+
+Example:
+
+```python
+abs(-7)        # 7
+round(3.14159, 2)  # 3.14
+max(4, 9, 2)   # 9
+sum([1, 2, 3]) # 6
+```
+
+---
+
+### 3. Sequence Functions
+
+| Function      | Description                     |
+| ------------- | ------------------------------- |
+| `len()`       | Number of items                 |
+| `sorted()`    | Returns a sorted list           |
+| `reversed()`  | Returns a reverse iterator      |
+| `enumerate()` | Adds index to items             |
+| `zip()`       | Combines iterables              |
+| `range()`     | Generates a sequence of numbers |
+
+Example:
+
+```python
+len("Python")          # 6
+list(range(5))         # [0, 1, 2, 3, 4]
+```
+
+---
+
+### 4. Input and Output
+
+| Function  | Description      |
+| --------- | ---------------- |
+| `print()` | Displays output  |
+| `input()` | Reads user input |
+
+Example:
+
+```python
+name = input("Enter your name: ")
+print(name)
+```
+
+---
+
+### 5. Type Checking
+
+| Function       | Description                                  |
+| -------------- | -------------------------------------------- |
+| `type()`       | Returns an object's type                     |
+| `isinstance()` | Checks if an object is an instance of a type |
+
+Example:
+
+```python
+type(10)                 # <class 'int'>
+isinstance(10, int)      # True
+```
+
+---
+
+### 6. Iteration Functions
+
+| Function | Description                             |
+| -------- | --------------------------------------- |
+| `iter()` | Creates an iterator                     |
+| `next()` | Gets the next item                      |
+| `all()`  | Returns `True` if all elements are true |
+| `any()`  | Returns `True` if any element is true   |
+
+Example:
+
+```python
+all([True, True])      # True
+any([False, True])     # True
+```
+
+---
+
+### 7. Object Functions
+
+| Function     | Description                              |
+| ------------ | ---------------------------------------- |
+| `id()`       | Returns an object's unique identifier    |
+| `hash()`     | Returns the hash value                   |
+| `dir()`      | Lists an object's attributes and methods |
+| `help()`     | Displays documentation                   |
+| `callable()` | Checks if an object can be called        |
+
+Example:
+
+```python
+help(len)
+dir(str)
+```
+
+---
+
+### 8. Character Functions
+
+| Function  | Description                                   |
+| --------- | --------------------------------------------- |
+| `chr()`   | Converts an integer to a Unicode character    |
+| `ord()`   | Returns the Unicode code point of a character |
+| `ascii()` | Returns an ASCII representation               |
+
+Example:
+
+```python
+chr(65)    # 'A'
+ord('A')   # 65
+```
+
+---
+
+### 9. Numeric Base Conversion
+
+| Function | Description             |
+| -------- | ----------------------- |
+| `bin()`  | Converts to binary      |
+| `oct()`  | Converts to octal       |
+| `hex()`  | Converts to hexadecimal |
+
+Example:
+
+```python
+bin(10)    # '0b1010'
+oct(10)    # '0o12'
+hex(10)    # '0xa'
+```
+
+---
+
+### 10. File Handling
+
+| Function | Description  |
+| -------- | ------------ |
+| `open()` | Opens a file |
+
+Example:
+
+```python
+file = open("example.txt", "r")
+```
+
+---
+
+### Other Useful Built-in Functions
+
+* `filter()`
+* `map()`
+* `eval()`
+* `exec()`
+* `format()`
+* `slice()`
+* `memoryview()`
+* `bytes()`
+* `bytearray()`
+* `frozenset()`
+* `super()`
+* `property()`
+* `staticmethod()`
+* `classmethod()`
+* `vars()`
+* `globals()`
+* `locals()`
+* `repr()`
+
+### How many built-in functions are there?
+
+Python 3 provides **around 70 built-in functions** (the exact count can vary slightly between Python versions). You can see them all by running:
+
+```python
+import builtins
+
+print(dir(builtins))
+```
+
+This lists all built-in functions, exceptions, and other built-in names available in your Python installation.
